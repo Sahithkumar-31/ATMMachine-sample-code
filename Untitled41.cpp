@@ -13,7 +13,7 @@ class atm
 	int balance;
 	
 	public:
-	void data(long int ac_no_s,long int pin_s,	string name_s,int balance_s)
+	void data(long int ac_no_s,long int pin_s,string name_s,int balance_s)
 	{
 		ac_no = ac_no_s;
 		pin = pin_s;
@@ -44,7 +44,7 @@ class atm
    	
 	void w_bal()
 	{  int w;
-	cout<<"\n Enter the balance for withdrawl";
+	cout<<"\n Enter the balance for withdrawl: ";
 	cin>>w;
 	if(w>0 && w<balance)
 	{
@@ -66,6 +66,7 @@ int main()
 	
 	m1.data(12345,54321,"Sahith Kumar",90000);
 	m2.data(67890,98760,"Rohith Kumar",100000);
+	m3.data(94401,58560,"Kumar",35000):
 	
 	do{
 		
@@ -86,7 +87,7 @@ int main()
 	}
 else
 {
-	cout<<"sorry your cad declined";
+	cout<<"wrong input //Try again\\";
 	_getch();
 	system("cls");
 	continue;
